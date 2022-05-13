@@ -10,6 +10,8 @@ namespace BasicCorePrograms
             Console.WriteLine("Please enter number as per options");
             Console.WriteLine("1: For Flip a coin and find % of Head and Tail");
             Console.WriteLine("2: For checking leap year");
+            Console.WriteLine("3: For finding power of 2");
+
             int check = Convert.ToInt32((string)Console.ReadLine());
             switch (check)
             {
@@ -21,6 +23,10 @@ namespace BasicCorePrograms
                 case 2:
                     LeapYear Leap_Year = new LeapYear();
                     Leap_Year.Leap();
+                    break;
+                case 3:
+                    PowerOf2 PowerTwo =new PowerOf2();
+                    PowerTwo.PowerTwo();
                     break;
                 default:
                     Console.WriteLine("Please SELECT correct number ! ");
