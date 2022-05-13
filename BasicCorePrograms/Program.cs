@@ -12,6 +12,7 @@ namespace BasicCorePrograms
             Console.WriteLine("2: For checking leap year");
             Console.WriteLine("3: For finding power of 2");
             Console.WriteLine("4: For geting harmonic seies numbers");
+            Console.WriteLine("5: For geting prime factor of a number");
             int check = Convert.ToInt32((string)Console.ReadLine());
             switch (check)
             {
@@ -32,6 +33,11 @@ namespace BasicCorePrograms
                     HarmonicF Harmoni_F = new HarmonicF();
                     Harmoni_F.HarmonicFunction();
                     break;
+                case 5:
+                    PrimeFactors PrimeFac = new PrimeFactors();
+                    PrimeFac.PrimeFactor();
+                    break;
+                    
                 default:
                     Console.WriteLine("Please SELECT correct number ! ");
                     break;
